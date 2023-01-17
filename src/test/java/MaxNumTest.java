@@ -1,30 +1,29 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MaxNumTest {
 
     @Test
-   public static void findMax() {
-        float num1 = 15.0f;
-        float num2 = 10.0f;
-        float num3 = 7.0f;
-        float expected = 15.0f;
-        float result = MaxNum.findMax(num1, num2, num3);
-        assert result == (expected);
+    public static void main(String[] args) {
 
-        num1 = 7.0f;
-        num2 = 15.0f;
-        num3 = 10.0f;
-        expected = 15.0f;
-        result = MaxNum.findMax(num1, num2, num3);
-        assert result == (expected);
+        String str1 = "Apple";
+        String str2 = "Peach";
+        String str3 = "Banana";
+        String expected = "Apple";
+        String result = FindMax.findMax(str1, str2, str3);
+        assert result.equals (expected);
 
-        num1 = 10.0f;
-        num2 = 7.0f;
-        num3 = 15.0f;
-        expected = 15.0f;
-        result = MaxNum.findMax(num1, num2, num3);
-        assert result == (expected);
+        str1 = "Peach";
+        str2 = "Apple";
+        str3 = "Banana";
+        expected = "Apple";
+        result = FindMax.findMax(str1, str2, str3);
+        assert result.equals (expected);
+
+        str1 = "Peach";
+        str2 = "Banana";
+        str3 = "Apple";
+        expected = "Apple";
+        result = FindMax.findMax(str1, str2, str3);
+        assert result.equals (expected);
     }
 }
