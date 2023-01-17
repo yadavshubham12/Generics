@@ -26,6 +26,5 @@ class MaxNumTest {
         expected = 15;
         result = MaxNum.findMax(num1, num2, num3);
         assert result.equals(expected);
-
     }
 }
