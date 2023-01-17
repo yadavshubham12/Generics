@@ -5,25 +5,19 @@ class MaxNumTest {
     @Test
     public static void main(String[] args) {
 
-        Integer num1 = 15;
-        Integer num2 = 10;
-        Integer num3 = 7;
+        FindMax<Integer> maxInt = new FindMax<Integer>(15, 10, 7);
         Integer expected = 15;
-        Integer result = FindMax.testMaximum(num1, num2, num3);
+        Integer result = maxInt.testMaximum();
         assert result.equals (expected);
 
-        float num4 = 10.0f;
-        float num5 = 15.0f;
-        float num6= 7.0f;
+        FindMax<Float> maxFloat = new FindMax<Float>(15.0f, 10.0f, 7.0f);
         float expected2 = 15.0f;
-        float result2 = FindMax.testMaximum(num1, num2, num3);
-        assert result2 == (expected2);
+        float result2 = maxInt.testMaximum();
+        assert result == (expected);
 
-        String str1 = "Apple";
-        String str2 = "Peach";
-        String str3 = "Banana";
+        FindMax<String> maxString = new FindMax<String>("Apple", "Peach", "Banana");
         String expected3 = "Apple";
-        String result3 = FindMax.testMaximum(str1, str2, str3);
-        assert result3.equals (expected3);
+        String result3 = maxString.testMaximum();
+        assert result3.equals(expected3);
     }
 }
