@@ -6,25 +6,25 @@ class MaxNumTest {
 
     @Test
    public static void findMax() {
-        Integer num1 = 15;
-        Integer num2 = 10;
-        Integer num3 = 7;
-        Integer expected = 15;
-        Integer result = MaxNum.findMax(num1, num2, num3);
-        assert result.equals(expected);
+        float num1 = 15.0f;
+        float num2 = 10.0f;
+        float num3 = 7.0f;
+        float expected = 15.0f;
+        float result = MaxNum.findMax(num1, num2, num3);
+        assert result == (expected);
 
-        num1 = 7;
-        num2 = 15;
-        num3 = 10;
-        expected = 15;
+        num1 = 7.0f;
+        num2 = 15.0f;
+        num3 = 10.0f;
+        expected = 15.0f;
         result = MaxNum.findMax(num1, num2, num3);
-        assert result.equals(expected);
+        assert result == (expected);
 
-        num1 = 10;
-        num2 = 7;
-        num3 = 15;
-        expected = 15;
+        num1 = 10.0f;
+        num2 = 7.0f;
+        num3 = 15.0f;
+        expected = 15.0f;
         result = MaxNum.findMax(num1, num2, num3);
-        assert result.equals(expected);
+        assert result == (expected);
     }
 }
